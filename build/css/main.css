@@ -33,7 +33,7 @@
     .header__logo {
       color: #F57C00;
       margin: 16px; }
-  .menu__button {
+  .m-button {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -44,32 +44,32 @@
     border-top-left-radius: 8px;
     color: #607D8B;
     padding: 0; }
-  .menu__current, .menu__burger {
-    display: none; }
-  .menu__button:hover {
+    .m-button__current, .m-button__burger {
+      display: none; }
+  .m-button:hover {
     color: #ffffff; }
-  .m-start {
+  .m-setting {
     border-top: 1px solid #455A64;
     border-bottom: 1px solid #455A64;
     display: flex;
     justify-content: space-between;
     padding: 10px 5px; }
-    .m-start__item {
+    .m-setting__item {
       background-color: inherit;
       border: none;
       display: flex;
       align-items: center;
       padding: 10px 10px;
       cursor: pointer; }
-    .m-start__item:hover {
+    .m-setting__item:hover {
       color: #ffffff; }
-    .m-start__item--white {
-      color: #ffffff; }
-  .login__name {
-    padding-left: 15px;
-    line-height: 30px;
-    font-size: 17px;
-    font-weight: 600; }
+  .login {
+    color: #ffffff; }
+    .login__name {
+      padding-left: 15px;
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: 500; }
   .languich {
     color: #78909C; }
     .languich__name {
@@ -98,29 +98,25 @@
   .voucher {
     display: flex;
     flex-direction: column; }
-    .voucher__head {
-      background-color: #37474F; }
-    .voucher__tittle {
+    .voucher__conteint {
+      margin: 32px 32px 0 32px; }
+    .voucher__menu {
+      margin: 32px; }
+  .v-head {
+    background-color: #37474F; }
+    .v-head__tittle {
       height: 85px;
       display: inline-flex;
       padding: 25px 32px;
       border-right: 1px solid #455A64;
       align-items: center; }
-    .voucher__tittle-svg {
+    .v-head__svg {
       color: #F57C00; }
-    .voucher__current-item {
+    .v-head__current-item {
       color: #90A4AE;
       margin-left: 15px; }
-    .voucher__conteint {
-      margin: 32px 32px 0 32px;
-      background-color: #ffffff; }
-    .voucher__menu {
-      margin: 32px;
-      display: flex;
-      gap: 32px; }
-    .voucher__item {
-      position: relative; }
   .form {
+    background-color: #ffffff;
     padding: 15px;
     display: grid;
     grid-template-columns: auto 145px;
@@ -148,6 +144,11 @@
       border: none; }
     .form__submit:hover, .form__submit:focus {
       box-shadow: inset 0 0 1px 0 #607D8B; }
+  .v-menu {
+    display: flex;
+    gap: 32px; }
+    .v-menu__item {
+      position: relative; }
   .v-button {
     display: flex;
     justify-content: space-between;
@@ -187,7 +188,7 @@
       margin: 5px;
       align-self: center; }
   .cover-button {
-    border: 1px solid red;
+    border: none;
     position: absolute;
     top: 0;
     width: 100%;
@@ -195,7 +196,8 @@
     opacity: 0; }
   .cover-button:hover,
   .cover-button:focus {
-    opacity: 0.2; }
+    opacity: 0.2;
+    border: 1px solid #263238; }
   .v-button--current {
     fill: #ffffff;
     background-color: #F57C00; }

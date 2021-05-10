@@ -15,8 +15,8 @@
   
 
 <header class="header">
-  <h1 class="hidden-text">Vexel voucher</h1>
   <div class="header__logo">
+    <h1 class="hidden-text">Vexel voucher</h1>
     <svg class="svg sm-none" width="138px" height="48px">
       <use xlink:href='img/svg/sprite.svg#logo-lg'></use>
     </svg>
@@ -25,23 +25,23 @@
     </svg>
   </div>
   <div class="header__menu menu">
-    <button type="button" class="menu__button">
-      <span class="menu__current">Voucher</span>
-      <svg class="svg menu__burger" width="24px" height="24px">
+    <button type="button" class="menu__button m-button">
+      <span class="m-button__current">Voucher</span>
+      <svg class="svg m-button__burger" width="24px" height="24px">
         <use xlink:href='img/svg/sprite.svg#icon-menu'></use>
       </svg>
-      <svg class="svg menu__triangle" width="24px" height="24px">
+      <svg class="svg m-button__triangle" width="24px" height="24px">
         <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
       </svg>
     </button>
-    <div class="menu__item m-start">
-      <button type="button" class="m-start__item m-start__item--white login">
+    <div class="menu__setting m-setting">
+      <button type="button" class="m-setting__item login">
         <svg class="svg" width="24px" height="24px">
           <use xlink:href='img/svg/sprite.svg#icon-login'></use>
         </svg>
         <span class="login__name">Log in</span>
       </button>
-      <button type="button" class="m-start__item languich">
+      <button type="button" class="m-setting__item languich">
         <span class="languich__name">En</span>
         <svg class="svg languich__triangle" width="24px" height="24px">
           <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
@@ -118,96 +118,92 @@
     </nav>
   </div>
 </header>
+
 <main class="main">
+
   <section class="voucher">
-    <h2 class="hidden-text">Voucher</h2>
-    <div class="voucher__head">
-      <div class="voucher__tittle">
-        <svg class="svg voucher__tittle-svg" width="24px" height="24px">
-          <use xlink:href='img/svg/sprite.svg#icon-plus'></use>
+  <h2 class="hidden-text">Voucher</h2>
+  <div class="voucher__head v-head">
+    <div class="v-head__tittle">
+      <svg class="svg v-head__svg" width="24px" height="24px">
+        <use xlink:href='img/svg/sprite.svg#icon-plus'></use>
+      </svg>
+      <span class="v-head__current-item">Create voucher</span>
+    </div>
+  </div>
+  <div class="voucher__conteint">
+    <form method="GET" class="form">
+      <label for="voucher-input" class="form__label">Enter Voucher number to gain access to one or several</label>
+      <input type="text" id="voucher-input" class="form__input"
+        pattern="[0-9]{4} [0-9]{4} [0-9]{4} - [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{2}"
+        placeholder="0000 0000 0000 - 0000 0000 0000 0000 0000 00">
+      <button type="submit" class="form__submit">
+        <svg class="svg" width="24px" height="24px">
+          <use xlink:href='img/svg/sprite.svg#icon-continue'></use>
         </svg>
-        <span class="voucher__current-item">Create voucher</span>
+        <span class="form__button-text">Continue</span>
+      </button>
+    </form>
+  </div>
+  <ul class="voucher__menu v-menu">
+    <li class="v-menu__item">
+      <div class="v-button v-button--current">
+        <div class="v-button__text">
+          <div class="v-button__tittle">
+            <span class="v-button__name">Create voucher</span>
+            <svg class="svg v-button__triangle" width="24px" height="24px">
+              <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
+            </svg>
+          </div>
+          <div class="v-button__description">By creating a new vexel you get a unique number and code and can use it
+            right away!</div>
+        </div>
+        <svg class="svg v-button__icon" width="48px" height="48px">
+          <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
+        </svg>
       </div>
-    </div>
-    <div class="voucher__conteint">
-      <form aсtion="#" method="GET" class="form">
-        <label for="voucher-input" class="form__label">Enter Voucher number to gain access to one or several</label>
-        <input type="text" id="voucher-input" class="form__input"
-          pattern="[0-9]{4} [0-9]{4} [0-9]{4} - [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{2}"
-          placeholder="0000 0000 0000 - 0000 0000 0000 0000 0000 00">
-        <button type="submit" class="form__submit">
-          <svg class="svg" width="24px" height="24px">
-            <use xlink:href='img/svg/sprite.svg#icon-continue'></use>
-          </svg>
-          <span class="form__botton-text">Continue</span>
-        </button>
-      </form>
-    </div>
-    <ul class="voucher__menu">
-      <li class="voucher__item">
-        <div class="v-button v-button--current">
-          <div class="v-button__text">
-            <div class="v-button__tittle">
-              <span class="v-button__name">Create voucher</span>
-              <svg class="svg v-button__triangle" width="24px" height="24px">
-                <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
-              </svg>
-            </div>
-            <div class="v-button__description">By creating a new vexel you get a unique number and code and can use it
-              right away!</div>
+      <button type="button" class="cover-button"></button>
+    </li>
+    <li class="v-menu__item">
+      <div class="v-button">
+        <div class="v-button__text">
+          <div class="v-button__tittle">
+            <span class="v-button__name">Open saved Vouchers</span>
+            <svg class="svg v-button__triangle" width="24px" height="24px">
+              <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
+            </svg>
           </div>
-          <svg class="svg v-button__icon" width="48px" height="48px">
-            <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
-          </svg>
+          <span class="v-button__description">If you are a registered user, you can use your saved vouchers for a
+            quick access.</span>
         </div>
-        <button type="button" class="cover-button">
-
-        </button>
-      </li>
-      <li class="voucher__item">
-        <div class="v-button v-button">
-          <div class="v-button__text">
-            <div class="v-button__tittle">
-              <span class="v-button__name">Open saved Vouchers</span>
-              <svg class="svg v-button__triangle" width="24px" height="24px">
-                <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
-              </svg>
-            </div>
-            <span class="v-button__description">If you are a registered user, you can use your saved vouchers for a
-              quick access.</span>
+        <svg class="svg v-button__icon" width="48px" height="48px">
+          <use xlink:href='img/svg/sprite.svg#icon-saved'></use>
+        </svg>
+      </div>
+      <button type="button" class="cover-button"></button>
+    </li>
+    <li class="v-menu__item">
+      <div class="v-button">
+        <div class="v-button__text">
+          <div class="v-button__tittle">
+            <span class="v-button__name">Restore last session</span>
+            <svg class="svg v-button__triangle" width="24px" height="24px">
+              <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
+            </svg>
           </div>
-          <svg class="svg v-button__icon" width="48px" height="48px">
-            <use xlink:href='img/svg/sprite.svg#icon-saved'></use>
-          </svg>
+          <span class="v-button__description">If you are a registered user, you can continue working from the point
+            you stopped the last time.</span>
         </div>
-        <button type="button" class="cover-button">
+        <svg class="svg v-button__icon" width="48px" height="48px">
+          <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
+        </svg>
+      </div>
+      <button type="button" class="cover-button"></button>
+    </li>
+  </ul>
+</section>
 
-        </button>
-      </li>
-      <li class="voucher__item">
-        <div class="v-button v-button">
-          <div class="v-button__text">
-            <div class="v-button__tittle">
-              <span class="v-button__name">Restore last session</span>
-              <svg class="svg v-button__triangle" width="24px" height="24px">
-                <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
-              </svg>
-            </div>
-            <span class="v-button__description">If you are a registered user, you can continue working from the point
-              you stopped the last time.</span>
-          </div>
-          <svg class="svg v-button__icon" width="48px" height="48px">
-            <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
-          </svg>
-        </div>
-        <button type="button" class="cover-button">
-
-        </button>
-      </li>
-    </ul>
-  </section>
 </main>
-
 
 
   <link rel="preconnect" href="https://fonts.gstatic.com">

@@ -26,6 +26,7 @@
     padding: 0;
     margin: 0;
     }
+
   .body {
     display: grid;
     grid-template-columns: 240px auto;
@@ -43,27 +44,25 @@
       margin: 16px;
     } 
   }
-  .menu {
-    &__button {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 24px;
-      height: 48px;
-      border: none;
-      background-color: $main-800;
-      border-top-left-radius: 8px;
-      color: $main-500;
-      padding: 0;
-    }
+  .m-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 48px;
+    border: none;
+    background-color: $main-800;
+    border-top-left-radius: 8px;
+    color: $main-500;
+    padding: 0;
     &__current, &__burger {
       display: none;
     }
-    &__button:hover {
-      color: $neutral-000;
-    }
   }
-  .m-start {
+  .m-button:hover {
+    color: $neutral-000;
+  }
+  .m-setting {
     border-top: 1px solid $main-700;
     border-bottom: 1px solid $main-700;
     display: flex;
@@ -78,18 +77,16 @@
       cursor: pointer;
     }
     &__item:hover {
-      color: $neutral-000;      
-    }
-    &__item--white {
-      color: $neutral-000;
+      color: $neutral-000;  
     }
   }
   .login {
+    color: $neutral-000;
     &__name {
       padding-left: 15px;
       line-height: 30px;
       font-size: 17px;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
   .languich {
@@ -129,11 +126,17 @@
   }
   .voucher {
     display: flex;
-    flex-direction: column;
-
-    &__head {
-      background-color: $main-800;
+    flex-direction: column;    
+    &__conteint {
+      margin: 32px 32px 0 32px;
     }
+    &__menu {
+      margin: 32px;
+    }
+
+  }
+  .v-head {
+    background-color: $main-800;
     &__tittle {
       height: 85px;
       display: inline-flex;
@@ -141,27 +144,16 @@
       border-right: 1px solid $main-700;
       align-items: center;
     }
-    &__tittle-svg {
+    &__svg {
       color: $accent;
     }
     &__current-item {
       color: $main-300;
       margin-left: 15px;
     }
-    &__conteint {
-      margin: 32px 32px 0 32px;
-      background-color: $neutral-000;
-    }
-    &__menu {
-      margin: 32px;
-      display: flex;
-      gap: 32px;
-    }
-    &__item {
-      position: relative;
-    }
   }
   .form {
+    background-color: $neutral-000;
     padding: 15px;
     display: grid;
     grid-template-columns: auto 145px;
@@ -194,6 +186,13 @@
     &__submit:hover,
     &__submit:focus {
       box-shadow: inset 0 0 1px 0 $main-500;
+    }
+  }
+  .v-menu {
+    display: flex;
+    gap: 32px;
+    &__item {
+      position: relative;
     }
   }
   .v-button {
@@ -232,7 +231,6 @@
       font-size: 14px;
       line-height: 22px;
       color: $main-400;
-      // color: inherit;
       display: block;
       text-align: start;
     }
@@ -243,7 +241,7 @@
     }
   }
   .cover-button {
-    border: 1px solid red;
+    border: none;
     position: absolute;
     top: 0;
     width: 100%;
@@ -253,6 +251,7 @@
   .cover-button:hover,
   .cover-button:focus {
     opacity: 0.2;
+    border: 1px solid $main-900;
   }
   .v-button--current {
     fill: $neutral-000;
