@@ -1,0 +1,253 @@
+@include media-down(lg) {
+
+}
+@include media-up(lg) {
+  *, *::after, *::before {
+    box-sizing: border-box;
+   }
+  .svg {
+    fill: currentColor;
+  }
+  .hidden-text {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    white-space: nowrap;
+    border: 0;
+    font-size: 1em;
+  }
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+  .body {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-rows: auto;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+  }
+  .header {
+    width: 240px; 
+    background-color: $main-900;
+    position: relative;
+    &__logo {
+      color: $accent;
+      margin: 16px;
+    } 
+  }
+  .menu {
+    &__button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 24px;
+      height: 48px;
+      border: none;
+      background-color: $main-800;
+      border-top-left-radius: 8px;
+      color: $main-500;
+      padding: 0;
+    }
+    &__current, &__burger {
+      display: none;
+    }
+    &__button:hover {
+      color: $neutral-000;
+    }
+  }
+  .m-start {
+    border-top: 1px solid $main-700;
+    border-bottom: 1px solid $main-700;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    &__item {
+      background-color: inherit;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      cursor: pointer;
+    }
+    &__item:hover {
+      color: $neutral-000;      
+    }
+    &__item--white {
+      color: $neutral-000;
+    }
+  }
+  .login {
+    &__name {
+      padding-left: 15px;
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+  .languich {
+    color: $main-400;
+    &__name {
+      line-height: 30px;
+      font-size: 17px;
+    }
+    &__triangle {
+      transform: rotate(-90deg);
+    }
+  }
+  .nav {
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 13px 15px 13px 15px;
+      color: $main-400;
+      text-decoration: none;
+    }
+    &__link:hover {
+      color: $neutral-200;
+    }
+    &__link--current {
+      background-color: $accent;
+      color: $neutral-000;
+    }
+    &__name {
+      padding-left: 15px;
+      line-height: 30px;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+  .main {
+    background-color: $backgroud;
+  }
+  .voucher {
+    display: flex;
+    flex-direction: column;
+
+    &__head {
+      background-color: $main-800;
+    }
+    &__tittle {
+      height: 85px;
+      display: inline-flex;
+      padding: 25px 32px;
+      border-right: 1px solid $main-700;
+      align-items: center;
+    }
+    &__tittle-svg {
+      color: $accent;
+    }
+    &__current-item {
+      color: $main-300;
+      margin-left: 15px;
+    }
+    &__conteint {
+      margin: 32px 32px 0 32px;
+      background-color: $neutral-000;
+    }
+    &__menu {
+      margin: 32px;
+      display: flex;
+      gap: 32px;
+    }
+  }
+  .form {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto 145px;
+    grid-template-rows: auto 50px;
+    grid-gap: 15px;
+    &__label {
+      grid-column: span 2;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__input {
+      padding: 10px 15px;
+      border: 1px solid $main-100;
+      font-size: 17px;
+
+    }
+    &__submit {
+      width: 145px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      color: $neutral-000;
+      background-color: $main-100;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+    }
+    &__submit:hover,
+    &__submit:focus {
+      box-shadow: inset 0 0 1px 0 $main-500;
+    }
+  }
+  .v-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 16px;
+    background-color: $neutral-000;
+    border: none;
+    height: 100%;
+    color: $accent;
+    fill: $accent;
+    &__text {
+      display: block;
+      width: 85%;
+    }
+    &__tittle {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      margin-bottom: 7px;
+    }
+    &__name {
+      font-weight: 600;
+      font-size: 17px;
+      color: $main-900;
+      white-space: nowrap;
+    }
+    &__triangle {
+      transform: rotate(180deg);
+      fill: inherit;
+      width: 24px;
+      height: 24px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 22px;
+      color: $main-400;
+      // color: inherit;
+      display: block;
+      text-align: start;
+    }
+    &__icon {
+      fill: inherit;
+      margin: 5px;
+      align-self: center;
+    }
+  }
+  .v-button--current {
+    fill: $neutral-000;
+    background-color: $accent;
+  }
+  .v-button--current .v-button__description,
+  .v-button--current .v-button__name {
+    color: $neutral-000;
+  }
+  .lg-none {
+    display: none;
+  }
+}

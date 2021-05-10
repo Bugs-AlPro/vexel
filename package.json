@@ -1,0 +1,26 @@
+{
+  "name": "vexel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-webp": "^4.0.1"
+  }
+}

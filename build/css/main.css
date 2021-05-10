@@ -1,0 +1,194 @@
+@media (min-width: 992px) {
+  *, *::after, *::before {
+    box-sizing: border-box; }
+  .svg {
+    fill: currentColor; }
+  .hidden-text {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    white-space: nowrap;
+    border: 0;
+    font-size: 1em; }
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .body {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-rows: auto;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif; }
+  .header {
+    width: 240px;
+    background-color: #263238;
+    position: relative; }
+    .header__logo {
+      color: #F57C00;
+      margin: 16px; }
+  .menu__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 48px;
+    border: none;
+    background-color: #37474F;
+    border-top-left-radius: 8px;
+    color: #607D8B;
+    padding: 0; }
+  .menu__current, .menu__burger {
+    display: none; }
+  .menu__button:hover {
+    color: #ffffff; }
+  .m-start {
+    border-top: 1px solid #455A64;
+    border-bottom: 1px solid #455A64;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px; }
+    .m-start__item {
+      background-color: inherit;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      cursor: pointer; }
+    .m-start__item:hover {
+      color: #ffffff; }
+    .m-start__item--white {
+      color: #ffffff; }
+  .login__name {
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 600; }
+  .languich {
+    color: #78909C; }
+    .languich__name {
+      line-height: 30px;
+      font-size: 17px; }
+    .languich__triangle {
+      transform: rotate(-90deg); }
+  .nav__link {
+    display: flex;
+    align-items: center;
+    padding: 13px 15px 13px 15px;
+    color: #78909C;
+    text-decoration: none; }
+  .nav__link:hover {
+    color: #EEEEEE; }
+  .nav__link--current {
+    background-color: #F57C00;
+    color: #ffffff; }
+  .nav__name {
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400; }
+  .main {
+    background-color: #e5e5e5; }
+  .voucher {
+    display: flex;
+    flex-direction: column; }
+    .voucher__head {
+      background-color: #37474F; }
+    .voucher__tittle {
+      height: 85px;
+      display: inline-flex;
+      padding: 25px 32px;
+      border-right: 1px solid #455A64;
+      align-items: center; }
+    .voucher__tittle-svg {
+      color: #F57C00; }
+    .voucher__current-item {
+      color: #90A4AE;
+      margin-left: 15px; }
+    .voucher__conteint {
+      margin: 32px 32px 0 32px;
+      background-color: #ffffff; }
+    .voucher__menu {
+      margin: 32px;
+      display: flex;
+      gap: 32px; }
+  .form {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto 145px;
+    grid-template-rows: auto 50px;
+    grid-gap: 15px; }
+    .form__label {
+      grid-column: span 2;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 30px; }
+    .form__input {
+      padding: 10px 15px;
+      border: 1px solid #CFD8DC;
+      font-size: 17px; }
+    .form__submit {
+      width: 145px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      color: #ffffff;
+      background-color: #CFD8DC;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: none; }
+    .form__submit:hover, .form__submit:focus {
+      box-shadow: inset 0 0 1px 0 #607D8B; }
+  .v-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 16px;
+    background-color: #ffffff;
+    border: none;
+    height: 100%;
+    color: #F57C00;
+    fill: #F57C00; }
+    .v-button__text {
+      display: block;
+      width: 85%; }
+    .v-button__tittle {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      margin-bottom: 7px; }
+    .v-button__name {
+      font-weight: 600;
+      font-size: 17px;
+      color: #263238;
+      white-space: nowrap; }
+    .v-button__triangle {
+      transform: rotate(180deg);
+      fill: inherit;
+      width: 24px;
+      height: 24px; }
+    .v-button__description {
+      font-size: 14px;
+      line-height: 22px;
+      color: #78909C;
+      display: block;
+      text-align: start; }
+    .v-button__icon {
+      fill: inherit;
+      margin: 5px;
+      align-self: center; }
+  .v-button--current {
+    fill: #ffffff;
+    background-color: #F57C00; }
+  .v-button--current .v-button__description,
+  .v-button--current .v-button__name {
+    color: #ffffff; }
+  .lg-none {
+    display: none; } }
