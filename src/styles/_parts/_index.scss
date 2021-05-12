@@ -99,10 +99,14 @@
     font-weight: 500;
     color: $main-900;
   }
+  ::-webkit-input-placeholder {
+    color: $main-300;
+  }
   &__input {
     padding: 10px 15px;
     border: 1px solid $main-100;
     font-size: 17px;
+    color: $main-700;
   }
   &__submit {
     font-weight: 400;
@@ -260,6 +264,7 @@
     border-top-left-radius: 8px;
     color: $main-500;
     padding: 0;
+    cursor: pointer;
     &__current, &__burger {
       display: none;
     }
@@ -375,10 +380,14 @@
       font-size: 17px;
       line-height: 30px;
     }
+    ::-webkit-input-placeholder {
+      color: $main-300;
+    }
     &__input {
       padding: 10px 15px;
       border: 1px solid $main-100;
       font-size: 17px;
+      color: $main-700;
     }
     &__submit {
       width: 145px;

@@ -80,10 +80,13 @@
       line-height: 30px;
       font-weight: 500;
       color: #263238; }
+    .form ::-webkit-input-placeholder {
+      color: #90A4AE; }
     .form__input {
       padding: 10px 15px;
       border: 1px solid #CFD8DC;
-      font-size: 17px; }
+      font-size: 17px;
+      color: #455A64; }
     .form__submit {
       font-weight: 400;
       font-size: 17px;
@@ -210,7 +213,8 @@
     background-color: #37474F;
     border-top-left-radius: 8px;
     color: #607D8B;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
     .m-button__current, .m-button__burger {
       display: none; }
   .m-button:hover {
@@ -298,10 +302,13 @@
       font-weight: 500;
       font-size: 17px;
       line-height: 30px; }
+    .form ::-webkit-input-placeholder {
+      color: #90A4AE; }
     .form__input {
       padding: 10px 15px;
       border: 1px solid #CFD8DC;
-      font-size: 17px; }
+      font-size: 17px;
+      color: #455A64; }
     .form__submit {
       width: 145px;
       font-weight: 400;
