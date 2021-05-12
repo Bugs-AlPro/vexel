@@ -32,9 +32,6 @@
     height: 100vh;
     min-width: 280px;
   }
-  .main {
-    height: 100%;
- }
   .header {
     display: flex;
     justify-content: space-between;
@@ -63,13 +60,9 @@
 }
 .voucher {
   background-color: $backgroud;
-  display: flex;
-  flex-direction: column;
-  // height: 100%;
 }
 .v-head {
   background-color: $main-800;
-  margin-bottom: 32px;
   &__tittle {
     background-color: inherit;
     border: none;
@@ -129,11 +122,8 @@
   }
 }
 .v-menu {
-  display: flex;
-  flex-direction: column;
-
   background-color: inherit;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
 }
 .v-button {
   position: relative;
