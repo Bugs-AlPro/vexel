@@ -52,11 +52,10 @@
   .voucher {
     background-color: #e5e5e5;
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    height: 100%; }
+    flex-direction: column; }
   .v-head {
-    background-color: #37474F; }
+    background-color: #37474F;
+    margin-bottom: 32px; }
     .v-head__tittle {
       background-color: inherit;
       border: none;
@@ -74,7 +73,8 @@
     background-color: #ffffff;
     padding: 16px;
     display: grid;
-    gap: 16px; }
+    gap: 16px;
+    margin-bottom: 32px; }
     .form__label {
       font-size: 17px;
       line-height: 30px;
@@ -102,12 +102,12 @@
   .v-menu {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     background-color: inherit;
     padding-bottom: 32px; }
     .v-menu__item {
       position: relative; }
   .v-button {
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -318,7 +318,8 @@
       box-shadow: inset 0 0 1px 0 #607D8B;
       background-color: #90A4AE; }
   .v-menu {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     gap: 32px; }
     .v-menu__item {
       position: relative; }
