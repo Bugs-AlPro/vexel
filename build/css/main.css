@@ -104,9 +104,8 @@
     flex-direction: column;
     background-color: inherit;
     padding-bottom: 32px; }
-    .v-menu__item {
-      position: relative; }
   .v-button {
+    position: relative;
     margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
@@ -144,17 +143,17 @@
       fill: inherit;
       margin: 5px;
       align-self: center; }
-  .cover-button {
-    border: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0; }
-  .cover-button:hover,
-  .cover-button:focus {
-    opacity: 0.2;
-    border: 1px solid #263238; }
+    .v-button__btn {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+    .v-button__btn:hover, .v-button__btn:focus {
+      opacity: 0.2;
+      border: 1px solid #263238; }
   .v-button--current {
     fill: #ffffff;
     background-color: #F57C00; }
@@ -321,9 +320,8 @@
     display: grid;
     grid-auto-flow: column;
     gap: 32px; }
-    .v-menu__item {
-      position: relative; }
   .v-button {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -361,17 +359,17 @@
       fill: inherit;
       margin: 5px;
       align-self: center; }
-  .cover-button {
-    border: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0; }
-  .cover-button:hover,
-  .cover-button:focus {
-    opacity: 0.2;
-    border: 1px solid #263238; }
+    .v-button__btn {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+    .v-button__btn:hover, .v-button__btn:focus {
+      opacity: 0.2;
+      border: 1px solid #263238; }
   .v-button--current {
     fill: #ffffff;
     background-color: #F57C00; }

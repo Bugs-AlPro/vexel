@@ -130,11 +130,9 @@
 
   background-color: inherit;
   padding-bottom: 32px;
-  &__item {
-    position: relative;
-  }
 }
 .v-button {
+  position: relative;
   margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
@@ -178,19 +176,20 @@
     margin: 5px;
     align-self: center;
   }
-}
-.cover-button {
-  border: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-.cover-button:hover,
-.cover-button:focus {
-  opacity: 0.2;
-  border: 1px solid $main-900;
+  &__btn {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    opacity: 0.2;
+    border: 1px solid $main-900;
+  }
 }
 .v-button--current {
   fill: $neutral-000;
@@ -403,11 +402,9 @@
     display: grid;
     grid-auto-flow: column;
     gap: 32px;
-    &__item {
-      position: relative;
-    }
   }
   .v-button {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -451,20 +448,22 @@
       margin: 5px;
       align-self: center;
     }
+    &__btn {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      opacity: 0.2;
+      border: 1px solid $main-900;
+    }
   }
-  .cover-button {
-    border: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-  }
-  .cover-button:hover,
-  .cover-button:focus {
-    opacity: 0.2;
-    border: 1px solid $main-900;
-  }
+  
   .v-button--current {
     fill: $neutral-000;
     background-color: $accent;
