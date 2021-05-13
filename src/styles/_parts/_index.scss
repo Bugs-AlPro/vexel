@@ -5,6 +5,9 @@
    *, *:hover {
     transition: 0.4s;
   }
+  a {
+    text-decoration: none;
+  }
   .svg {
     fill: currentColor;
   }
@@ -29,30 +32,34 @@
   .body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    height: 100vh;
+    font-size: 17px;
+    line-height: 30px;
     min-width: 280px;
+
   }
   .header {
     display: flex;
     justify-content: space-between;
     background-color: $main-900;
-    padding: 10px 11px 10px 16px;
     &__logo {
       color: $accent;
-      margin-top: 7px;
+      margin: 16px;
+      height: 24px;
     }
   }
   .m-button {
     background-color: inherit;
     color: $neutral-000;
     display: flex;
-    justify-content: space-between;
-    padding: 7px 5px 7px 15px;
+    align-items: center;
+    padding: 13px 16px;
     border: none;
     cursor: pointer;
     &__current {
       font-size: 17px;
-      padding-right: 10px;
+      line-height: 30px;
+      height: 30px;
+      padding-right: 16px;
     }
   }
 .m-setting, .nav {
@@ -60,10 +67,14 @@
 }
 .voucher {
   background-color: $backgroud;
+  height: 100%;
+  // padding-bottom: 32px;
+  // display: grid;
+
 }
 .v-head {
   background-color: $main-800;
-  &__tittle {
+  &__btn {
     background-color: inherit;
     border: none;
     padding: 13px 16px;
@@ -78,6 +89,9 @@
   &__current-item {
     color: $main-300;
     margin-left: 16px;
+    font-size: 17px;
+    line-height: 30px;
+    height: 30px;
   }
 }
 .form {
@@ -85,26 +99,19 @@
   padding: 16px;
   display: grid;
   gap: 16px;
-  margin-bottom: 32px;
+  margin: 32px 0;
   &__label {
-    font-size: 17px;
-    line-height: 30px;
     font-weight: 500;
     color: $main-900;
   }
-  ::-webkit-input-placeholder {
-    color: $main-300;
-  }
   &__input {
-    padding: 10px 15px;
+    padding: 9px 15px;
     border: 1px solid $main-100;
     font-size: 17px;
     color: $main-700;
   }
+ 
   &__submit {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 30px;
     padding: 9px 16px;
     color: $neutral-000;
     background-color: $main-100;
@@ -119,15 +126,16 @@
   }
   &__button-text {
     padding-left: 16px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 .v-menu {
   background-color: inherit;
-  padding-bottom: 16px;
 }
 .v-button {
   position: relative;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   align-items: top;
@@ -140,7 +148,7 @@
     display: block;
     width: 85%;
   }
-  &__tittle {
+  &__title {
     display: flex;
     align-items: center;
     text-align: start;
@@ -204,6 +212,9 @@
    *, *:hover {
     transition: 0.4s;
   }
+  a {
+    text-decoration: none;
+  }
   .svg {
     fill: currentColor;
   }
@@ -233,14 +244,16 @@
     margin: 0;
     height: 100vh;
     font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
   }
   .header {
-    width: 240px; 
     background-color: $main-900;
     position: relative;
     &__logo {
       color: $accent;
       margin: 16px;
+      height: 48px;
     } 
   }
   .m-button {
@@ -267,14 +280,14 @@
     border-bottom: 1px solid $main-700;
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 16px;
     &__item {
       background-color: inherit;
       border: none;
       display: flex;
       align-items: center;
-      padding: 10px 10px;
-      cursor: pointer;
+      padding: 0;
+      position: relative;
     }
     &__item:hover {
       color: $neutral-000;  
@@ -283,27 +296,39 @@
   .login {
     color: $neutral-000;
     &__name {
-      padding-left: 15px;
-      line-height: 30px;
-      font-size: 17px;
+      padding-left: 16px;
       font-weight: 500;
+      height: 30px;
+    }
+    &__btn {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
     }
   }
-  .languich {
+  .language {
     color: $main-400;
     &__name {
-      line-height: 30px;
-      font-size: 17px;
+      height: 30px;
     }
     &__triangle {
       transform: rotate(-90deg);
+    }
+    &__btn {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
     }
   }
   .nav {
     &__link {
       display: flex;
       align-items: center;
-      padding: 13px 15px 13px 15px;
+      padding: 13px 16px;
       color: $main-400;
       text-decoration: none;
     }
@@ -315,10 +340,9 @@
       color: $neutral-000;
     }
     &__name {
-      padding-left: 15px;
-      line-height: 30px;
-      font-size: 17px;
+      padding-left: 16px;
       font-weight: 400;
+      height: 30px;
     }
   }
   .main {
@@ -327,69 +351,66 @@
   .voucher {
     display: flex;
     flex-direction: column;    
-    &__conteint {
-      margin: 32px 32px 0 32px;
-    }
-    &__menu {
+    &__content {
       margin: 32px;
     }
-
   }
   .v-head {
     background-color: $main-800;
-    &__tittle {
+    &__btn {
       cursor: pointer;
       border: none;
-      height: 85px;
       display: inline-flex;
       padding: 25px 32px;
       border-right: 1px solid $main-700;
       align-items: center;
       background-color: inherit;
-      
     }
     &__svg {
       color: $accent;
     }
     &__current-item {
       color: $main-300;
-      margin-left: 15px;
+      margin-left: 16px;
       font-size: 17px;
+      line-height: 30px;
+      height: 30px;
     }
   }
   .form {
     background-color: $neutral-000;
-    padding: 15px;
+    padding: 16px;
     display: grid;
     grid-template-columns: auto 145px;
-    grid-template-rows: auto 50px;
-    grid-gap: 15px;
+    grid-template-rows: auto 48px;
+    grid-gap: 16px;
     &__label {
       grid-column: span 2;
       font-weight: 500;
-      font-size: 17px;
-      line-height: 30px;
-    }
-    ::-webkit-input-placeholder {
-      color: $main-300;
+      height: 30px;
     }
     &__input {
-      padding: 10px 15px;
+      padding: 9px 16px;
       border: 1px solid $main-100;
       font-size: 17px;
+      line-height: 30px;
       color: $main-700;
     }
     &__submit {
       width: 145px;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 30px;
       color: $neutral-000;
       background-color: $main-100;
       display: flex;
       align-items: center;
-      justify-content: space-around;
       border: none;
+      padding: 9px 16px;
+    }
+    &__button-text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      height: 30px;
+      padding-left: 16px;
     }
     &__submit:hover,
     &__submit:focus {
@@ -398,36 +419,35 @@
     }
   }
   .v-menu {
+    margin: 0 32px 32px 32px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
   }
   .v-button {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     padding: 16px;
     background-color: $neutral-000;
-    border: none;
     height: 100%;
     color: $accent;
     fill: $accent;
     &__text {
-      display: block;
       width: 85%;
     }
-    &__tittle {
+    &__title {
       display: flex;
       align-items: center;
-      text-align: start;
-      margin-bottom: 7px;
+      height: 30px;
+      min-width: 206px;
     }
     &__name {
       font-weight: 500;
-      font-size: 17px;
+      margin-right: 8px;
       color: $main-900;
       white-space: nowrap;
+      
     }
     &__triangle {
       transform: rotate(180deg);
@@ -444,25 +464,14 @@
     }
     &__icon {
       fill: inherit;
-      margin: 5px;
+      margin-left: 16px;
       align-self: center;
     }
-    &__btn {
-      border: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-    }
-    &__btn:hover,
-    &__btn:focus {
-      opacity: 0.2;
-      border: 1px solid $main-900;
-    }
   }
-  
+  .v-button:hover,
+  .v-button:focus {
+    box-shadow: inset 0 0 0 1px $main-300;
+  }
   .v-button--current {
     fill: $neutral-000;
     background-color: $accent;

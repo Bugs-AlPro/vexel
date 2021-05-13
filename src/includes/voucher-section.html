@@ -1,19 +1,20 @@
 <section class="voucher">
   <h2 class="hidden-text">Voucher</h2>
   <div class="voucher__head v-head">
-    <button type="button" class="v-head__tittle">
+    <button type="button" class="v-head__btn">
       <svg class="svg v-head__svg" width="24px" height="24px">
         <use xlink:href='img/svg/sprite.svg#icon-plus'></use>
       </svg>
       <span class="v-head__current-item">Create voucher</span>
     </button>
   </div>
-  <div class="voucher__conteint">
+  <div class="voucher__content">
     <form method="GET" class="form">
       <label for="voucher-input" class="form__label">Enter Voucher number to gain access to one or several</label>
       <input type="text" id="voucher-input" class="form__input"
         pattern="[0-9]{4} [0-9]{4} [0-9]{4} - [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4} [0-9]{2}"
         placeholder="0000 0000 0000 - 0000 0000 0000 0000 0000 00">
+
       <button type="submit" class="form__submit">
         <svg class="svg" width="24px" height="24px">
           <use xlink:href='img/svg/sprite.svg#icon-continue'></use>
@@ -24,9 +25,9 @@
   </div>
   <ul class="voucher__menu v-menu">
     <li class="v-menu__item">
-      <div class="v-button v-button--current">
+      <a href="" class="v-button v-button--current">
         <div class="v-button__text">
-          <div class="v-button__tittle">
+          <div class="v-button__title">
             <span class="v-button__name">Create voucher</span>
             <svg class="svg v-button__triangle" width="24px" height="24px">
               <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
@@ -38,14 +39,12 @@
         <svg class="svg v-button__icon" width="48px" height="48px">
           <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
         </svg>
-        <button type="button" class="v-button__btn"></button>
-      </div>
-
+      </a>
     </li>
     <li class="v-menu__item">
-      <div class="v-button">
+      <a href="" class="v-button">
         <div class="v-button__text">
-          <div class="v-button__tittle">
+          <div class="v-button__title">
             <span class="v-button__name">Open saved Vouchers</span>
             <svg class="svg v-button__triangle" width="24px" height="24px">
               <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
@@ -57,14 +56,12 @@
         <svg class="svg v-button__icon" width="48px" height="48px">
           <use xlink:href='img/svg/sprite.svg#icon-saved'></use>
         </svg>
-        <button type="button" class="v-button__btn"></button>
-      </div>
-
+      </a>
     </li>
     <li class="v-menu__item">
-      <div class="v-button">
+      <a href="" class="v-button">
         <div class="v-button__text">
-          <div class="v-button__tittle">
+          <div class="v-button__title">
             <span class="v-button__name">Restore last session</span>
             <svg class="svg v-button__triangle" width="24px" height="24px">
               <use xlink:href='img/svg/sprite.svg#icon-triangle'></use>
@@ -74,10 +71,9 @@
             you stopped the last time.</span>
         </div>
         <svg class="svg v-button__icon" width="48px" height="48px">
-          <use xlink:href='img/svg/sprite.svg#icon-voucher'></use>
+          <use xlink:href='img/svg/sprite.svg#icon-history'></use>
         </svg>
-        <button type="button" class="v-button__btn"></button>
-      </div>
+      </a>
     </li>
   </ul>
 </section>

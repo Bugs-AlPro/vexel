@@ -3,6 +3,8 @@
     box-sizing: border-box; }
   *, *:hover {
     transition: 0.4s; }
+  a {
+    text-decoration: none; }
   .svg {
     fill: currentColor; }
   .hidden-text {
@@ -24,34 +26,38 @@
   .body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    height: 100vh;
+    font-size: 17px;
+    line-height: 30px;
     min-width: 280px; }
   .header {
     display: flex;
     justify-content: space-between;
-    background-color: #263238;
-    padding: 10px 11px 10px 16px; }
+    background-color: #263238; }
     .header__logo {
       color: #F57C00;
-      margin-top: 7px; }
+      margin: 16px;
+      height: 24px; }
   .m-button {
     background-color: inherit;
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    padding: 7px 5px 7px 15px;
+    align-items: center;
+    padding: 13px 16px;
     border: none;
     cursor: pointer; }
     .m-button__current {
       font-size: 17px;
-      padding-right: 10px; }
+      line-height: 30px;
+      height: 30px;
+      padding-right: 16px; }
   .m-setting, .nav {
     display: none; }
   .voucher {
-    background-color: #e5e5e5; }
+    background-color: #e5e5e5;
+    height: 100%; }
   .v-head {
     background-color: #37474F; }
-    .v-head__tittle {
+    .v-head__btn {
       background-color: inherit;
       border: none;
       padding: 13px 16px;
@@ -63,29 +69,25 @@
       color: #F57C00; }
     .v-head__current-item {
       color: #90A4AE;
-      margin-left: 16px; }
+      margin-left: 16px;
+      font-size: 17px;
+      line-height: 30px;
+      height: 30px; }
   .form {
     background-color: #ffffff;
     padding: 16px;
     display: grid;
     gap: 16px;
-    margin-bottom: 32px; }
+    margin: 32px 0; }
     .form__label {
-      font-size: 17px;
-      line-height: 30px;
       font-weight: 500;
       color: #263238; }
-    .form ::-webkit-input-placeholder {
-      color: #90A4AE; }
     .form__input {
-      padding: 10px 15px;
+      padding: 9px 15px;
       border: 1px solid #CFD8DC;
       font-size: 17px;
       color: #455A64; }
     .form__submit {
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 30px;
       padding: 9px 16px;
       color: #ffffff;
       background-color: #CFD8DC;
@@ -96,13 +98,13 @@
       box-shadow: inset 0 0 1px 0 #607D8B;
       background-color: #90A4AE; }
     .form__button-text {
-      padding-left: 16px; }
+      padding-left: 16px;
+      font-size: 17px;
+      line-height: 30px; }
   .v-menu {
-    background-color: inherit;
-    padding-bottom: 16px; }
+    background-color: inherit; }
   .v-button {
     position: relative;
-    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -114,7 +116,7 @@
     .v-button__text {
       display: block;
       width: 85%; }
-    .v-button__tittle {
+    .v-button__title {
       display: flex;
       align-items: center;
       text-align: start;
@@ -164,6 +166,8 @@
     box-sizing: border-box; }
   *, *:hover {
     transition: 0.4s; }
+  a {
+    text-decoration: none; }
   .svg {
     fill: currentColor; }
   .hidden-text {
@@ -188,14 +192,16 @@
     grid-template-rows: auto;
     margin: 0;
     height: 100vh;
-    font-family: 'Rubik', sans-serif; }
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    line-height: 30px; }
   .header {
-    width: 240px;
     background-color: #263238;
     position: relative; }
     .header__logo {
       color: #F57C00;
-      margin: 16px; }
+      margin: 16px;
+      height: 48px; }
   .m-button {
     position: absolute;
     bottom: 0;
@@ -217,34 +223,44 @@
     border-bottom: 1px solid #455A64;
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px; }
+    padding: 16px; }
     .m-setting__item {
       background-color: inherit;
       border: none;
       display: flex;
       align-items: center;
-      padding: 10px 10px;
-      cursor: pointer; }
+      padding: 0;
+      position: relative; }
     .m-setting__item:hover {
       color: #ffffff; }
   .login {
     color: #ffffff; }
     .login__name {
-      padding-left: 15px;
-      line-height: 30px;
-      font-size: 17px;
-      font-weight: 500; }
-  .languich {
+      padding-left: 16px;
+      font-weight: 500;
+      height: 30px; }
+    .login__btn {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer; }
+  .language {
     color: #78909C; }
-    .languich__name {
-      line-height: 30px;
-      font-size: 17px; }
-    .languich__triangle {
+    .language__name {
+      height: 30px; }
+    .language__triangle {
       transform: rotate(-90deg); }
+    .language__btn {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer; }
   .nav__link {
     display: flex;
     align-items: center;
-    padding: 13px 15px 13px 15px;
+    padding: 13px 16px;
     color: #78909C;
     text-decoration: none; }
   .nav__link:hover {
@@ -253,25 +269,21 @@
     background-color: #F57C00;
     color: #ffffff; }
   .nav__name {
-    padding-left: 15px;
-    line-height: 30px;
-    font-size: 17px;
-    font-weight: 400; }
+    padding-left: 16px;
+    font-weight: 400;
+    height: 30px; }
   .main {
     background-color: #e5e5e5; }
   .voucher {
     display: flex;
     flex-direction: column; }
-    .voucher__conteint {
-      margin: 32px 32px 0 32px; }
-    .voucher__menu {
+    .voucher__content {
       margin: 32px; }
   .v-head {
     background-color: #37474F; }
-    .v-head__tittle {
+    .v-head__btn {
       cursor: pointer;
       border: none;
-      height: 85px;
       display: inline-flex;
       padding: 25px 32px;
       border-right: 1px solid #455A64;
@@ -281,67 +293,68 @@
       color: #F57C00; }
     .v-head__current-item {
       color: #90A4AE;
-      margin-left: 15px;
-      font-size: 17px; }
+      margin-left: 16px;
+      font-size: 17px;
+      line-height: 30px;
+      height: 30px; }
   .form {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 16px;
     display: grid;
     grid-template-columns: auto 145px;
-    grid-template-rows: auto 50px;
-    grid-gap: 15px; }
+    grid-template-rows: auto 48px;
+    grid-gap: 16px; }
     .form__label {
       grid-column: span 2;
       font-weight: 500;
-      font-size: 17px;
-      line-height: 30px; }
-    .form ::-webkit-input-placeholder {
-      color: #90A4AE; }
+      height: 30px; }
     .form__input {
-      padding: 10px 15px;
+      padding: 9px 16px;
       border: 1px solid #CFD8DC;
       font-size: 17px;
+      line-height: 30px;
       color: #455A64; }
     .form__submit {
       width: 145px;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 30px;
       color: #ffffff;
       background-color: #CFD8DC;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      border: none; }
+      border: none;
+      padding: 9px 16px; }
+    .form__button-text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      height: 30px;
+      padding-left: 16px; }
     .form__submit:hover, .form__submit:focus {
       box-shadow: inset 0 0 1px 0 #607D8B;
       background-color: #90A4AE; }
   .v-menu {
+    margin: 0 32px 32px 32px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 32px; }
   .v-button {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     padding: 16px;
     background-color: #ffffff;
-    border: none;
     height: 100%;
     color: #F57C00;
     fill: #F57C00; }
     .v-button__text {
-      display: block;
       width: 85%; }
-    .v-button__tittle {
+    .v-button__title {
       display: flex;
       align-items: center;
-      text-align: start;
-      margin-bottom: 7px; }
+      height: 30px;
+      min-width: 206px; }
     .v-button__name {
       font-weight: 500;
-      font-size: 17px;
+      margin-right: 8px;
       color: #263238;
       white-space: nowrap; }
     .v-button__triangle {
@@ -357,19 +370,11 @@
       text-align: start; }
     .v-button__icon {
       fill: inherit;
-      margin: 5px;
+      margin-left: 16px;
       align-self: center; }
-    .v-button__btn {
-      border: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0; }
-    .v-button__btn:hover, .v-button__btn:focus {
-      opacity: 0.2;
-      border: 1px solid #263238; }
+  .v-button:hover,
+  .v-button:focus {
+    box-shadow: inset 0 0 0 1px #90A4AE; }
   .v-button--current {
     fill: #ffffff;
     background-color: #F57C00; }
