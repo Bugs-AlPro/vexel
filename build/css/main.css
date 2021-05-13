@@ -28,7 +28,8 @@
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     line-height: 30px;
-    min-width: 280px; }
+    min-width: 280px;
+    background-color: #e5e5e5; }
   .header {
     display: flex;
     justify-content: space-between;
@@ -103,27 +104,26 @@
       line-height: 30px; }
   .v-menu {
     background-color: inherit; }
+    .v-menu__item {
+      margin-bottom: 32px; }
   .v-button {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     padding: 16px;
     background-color: #ffffff;
-    border: none;
     color: #F57C00;
     fill: #F57C00; }
     .v-button__text {
-      display: block;
       width: 85%; }
     .v-button__title {
       display: flex;
       align-items: center;
-      text-align: start;
-      margin-bottom: 7px; }
+      height: 30px;
+      min-width: 200px; }
     .v-button__name {
       font-weight: 500;
-      font-size: 17px;
+      margin-right: 8px;
       color: #263238;
       white-space: nowrap; }
     .v-button__triangle {
@@ -139,19 +139,11 @@
       text-align: start; }
     .v-button__icon {
       fill: inherit;
-      margin: 5px;
+      margin-left: 16px;
       align-self: center; }
-    .v-button__btn {
-      border: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0; }
-    .v-button__btn:hover, .v-button__btn:focus {
-      opacity: 0.2;
-      border: 1px solid #263238; }
+  .v-button:hover,
+  .v-button:focus {
+    box-shadow: inset 0 0 0 1px #90A4AE; }
   .v-button--current {
     fill: #ffffff;
     background-color: #F57C00; }

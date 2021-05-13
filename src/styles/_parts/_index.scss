@@ -35,7 +35,7 @@
     font-size: 17px;
     line-height: 30px;
     min-width: 280px;
-
+    background-color: $backgroud;
   }
   .header {
     display: flex;
@@ -65,12 +65,10 @@
 .m-setting, .nav {
   display: none;
 }
+
 .voucher {
   background-color: $backgroud;
   height: 100%;
-  // padding-bottom: 32px;
-  // display: grid;
-
 }
 .v-head {
   background-color: $main-800;
@@ -132,31 +130,31 @@
 }
 .v-menu {
   background-color: inherit;
+  &__item {
+    margin-bottom: 32px;
+  }
 }
 .v-button {
-  position: relative;
-  // margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
   padding: 16px;
   background-color: $neutral-000;
-  border: none;
+  
   color: $accent;
   fill: $accent;
   &__text {
-    display: block;
     width: 85%;
   }
   &__title {
     display: flex;
     align-items: center;
-    text-align: start;
-    margin-bottom: 7px;
+    height: 30px;
+    min-width: 200px;
   }
   &__name {
     font-weight: 500;
-    font-size: 17px;
+    margin-right: 8px;
     color: $main-900;
     white-space: nowrap;
   }
@@ -175,23 +173,13 @@
   }
   &__icon {
     fill: inherit;
-    margin: 5px;
+    margin-left: 16px;
     align-self: center;
   }
-  &__btn {
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-  }
-  &__btn:hover,
-  &__btn:focus {
-    opacity: 0.2;
-    border: 1px solid $main-900;
-  }
+}
+.v-button:hover,
+.v-button:focus {
+  box-shadow: inset 0 0 0 1px $main-300;
 }
 .v-button--current {
   fill: $neutral-000;
