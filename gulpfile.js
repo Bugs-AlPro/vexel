@@ -20,6 +20,7 @@ var path = {
     styles: 'src/styles/*.scss',
     images: 'src/img/*.{jpg,jpeg,png,webp,svg}',
     js: 'src/js/*.js',
+    font: 'src/fonts/*.{woff,woff2,ttf}',
     svg: 'src/img/svg/*.svg'
   },
   build: {
@@ -27,6 +28,7 @@ var path = {
     styles: 'build/css/',
     images: 'build/img/',
     js: 'build/js/',
+    font: 'build/fonts/',
     svg: 'build/img/svg'
   },
   watch: {
@@ -73,6 +75,13 @@ function js() {
   return gulp
     .src(path.src.js)
     .pipe(gulp.dest(path.build.js))
+    .pipe(reload({ stream: true }));
+};
+
+function font() {
+  return gulp
+    .src(path.src.font)
+    .pipe(gulp.dest(path.build.font))
     .pipe(reload({ stream: true }));
 };
 
@@ -128,6 +137,7 @@ gulp.task('styles', styles);
 gulp.task('img', images);
 gulp.task('svg', svg);
 gulp.task('js', js);
+gulp.task('font', font);
 
-gulp.task('build', gulp.series(clean, gulp.parallel(html, styles, images, js, svg)));
+gulp.task('build', gulp.series(clean, gulp.parallel(html, styles, images, js, font, svg)));
 gulp.task('watch', gulp.parallel(watchFiles, browserSync));

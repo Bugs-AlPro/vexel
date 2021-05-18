@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Rubik"), url("../fonts/Rubik.woff2") format("woff2"), url("../fonts/Rubik.woff") format("woff"); }
+
+@font-face {
+  font-family: "Rubik";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Rubik"), url("../fonts/Rubikmedium.woff2") format("woff2"), url("../fonts/Rubikmedium.woff") format("woff"); }
+
 @media (max-width: 1169.98px) {
   *, *::after, *::before {
     box-sizing: border-box; }
@@ -29,7 +41,8 @@
     font-size: 17px;
     line-height: 30px;
     min-width: 280px;
-    background-color: #e5e5e5; }
+    background-color: #e5e5e5;
+    font-display: swap; }
   .header {
     display: flex;
     justify-content: space-between;
@@ -186,7 +199,8 @@
     height: 100vh;
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
-    line-height: 30px; }
+    line-height: 30px;
+    font-display: swap; }
   .header {
     background-color: #263238;
     position: relative; }

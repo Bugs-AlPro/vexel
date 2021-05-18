@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Rubik"),
+       url("../fonts/Rubik.woff2") format("woff2"),
+       url("../fonts/Rubik.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Rubik"),
+       url("../fonts/Rubikmedium.woff2") format("woff2"),
+       url("../fonts/Rubikmedium.woff") format("woff");
+}
 @include media-down(xl) {
   *, *::after, *::before {
     box-sizing: border-box;
@@ -36,6 +52,7 @@
     line-height: 30px;
     min-width: 280px;
     background-color: $backgroud;
+    font-display: swap;
   }
   .header {
     display: flex;
@@ -234,6 +251,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     line-height: 30px;
+    font-display: swap;
   }
   .header {
     background-color: $main-900;
